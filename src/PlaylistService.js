@@ -26,11 +26,12 @@ class PlaylistService {
 
     const playlist = playlistResult.rows[0];
     playlist.songs = songsResult.rows;
-    return playlist;
 
-    // const album = albumResult.rows[0];
-    // album.songs = songsResult.rows;
-    // return album;
+    const playlistJson = {
+      playlist,
+    };
+
+    return playlistJson;
   }
 }
 
